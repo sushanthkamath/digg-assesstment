@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+<!-- The Simple Feed Viewer application JavaScript should live here.
+ -->
+
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <title>Simple Feed Viewer</title>
+
+    <link href="app.css" type="text/css" rel="stylesheet">
+    
+</head>
+<body>
+    <center><h1>Simple Feed Viewer</h1></center>
+    <section class="wrapper">
+
+    	<section class="feed-menu">
+			<button id="digg" class="inactive">Digg</button>
+			<button id="david_picks" class="inactive">Editor's Picks Feed</button>
+			<button id="politics" class="inactive">Politics Feed</button>
+			<button id="design" class="inactive">Design Feed</button>
+    	</section>
+
+    	<section class="feed-content" id="feed_content">
+    		<div class="head">
+	    		<div class="sort">
+		    		<span>Sort by:</span>
+		    		<select id="sort-feed">
+		    			<option value="0" selected="selected">Select one</option>
+		    			<option value="asc">Newest</option>
+		    			<option value="dsc">Oldest</option>
+		    		</select>
+	    		</div>
+	    		<center><h2>Feed</h2></center>
+	    	</div>
+    		<ul id="content-feed"></ul>
+    	</section>
+
+    </section>
+    <script src="util.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
